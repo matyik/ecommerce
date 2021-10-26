@@ -1,0 +1,65 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  background-color: $maximum-blue;
+  justify-content: space-between;
+  color: $white;
+
+  form {
+    display: flex;
+    input {
+      font-size: 1.5rem;
+      padding-left: 1rem;
+      outline: none;
+      border-left: 1px solid $mountbatten-pink;
+      border-top: 1px solid $mountbatten-pink;
+      border-bottom: 1px solid $mountbatten-pink;
+      border-right: 0;
+
+      &:focus {
+        box-shadow: 0px 0px 2px 2px $mountbatten-pink;
+      }
+    }
+    button {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      border-right: 1px solid $mountbatten-pink;
+      border-top: 1px solid $mountbatten-pink;
+      border-bottom: 1px solid $mountbatten-pink;
+      border-left: 0;
+      background-color: $mountbatten-pink;
+      color: $white;
+      cursor: pointer;
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+      outline: none;
+      transition: all 200ms;
+
+      &:hover {
+        background-color: $white;
+        color: $mountbatten-pink;
+      }
+
+      &:focus {
+        box-shadow: 0px 0px 2px 2px $mountbatten-pink;
+      }
+    }
+  }
+
+  .nav-links {
+    span {
+      margin-left: 1rem;
+      cursor: pointer;
+      transition: all 200ms;
+
+      &:hover {
+        color: $titanium-yellow;
+      }
+
+      svg {
+        margin-right: 0.25rem;
+      }
+    }
+  }
+}
