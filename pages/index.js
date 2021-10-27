@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Image from 'next/image'
 import Navbar from '../components/Navbar'
 import { useState, useEffect } from 'react'
 
@@ -57,6 +58,24 @@ export default function Home() {
               <button>Shop Tech</button>
             </div>
           </div>
+        </div>
+      </div>
+      <div className='categories-container'>
+        <div className='category-card'>
+          <div className='card-left'>
+            <h4>Gaming</h4>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis
+              blanditiis tempore provident, numquam voluptatem temporibus?
+            </p>
+          </div>
+          <Image
+            className='card-image'
+            alt='Gaming'
+            src='/gaming.png'
+            width='100'
+            height='100'
+          />
         </div>
       </div>
     </>

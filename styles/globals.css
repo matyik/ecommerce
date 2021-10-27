@@ -23,6 +23,7 @@
   font-size: 1.5rem;
   padding-left: 1rem;
   outline: none;
+  width: clamp(300px, 50vw, 800px);
   border-left: 1px solid #9d8189ff;
   border-top: 1px solid #9d8189ff;
   border-bottom: 1px solid #9d8189ff;
@@ -136,6 +137,31 @@
 .slideshow .slides .slide .slide-content button:hover {
   color: #9d8189ff;
   background-position: 100% 100%;
+}
+
+.categories-container {
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-x: scroll;
+}
+
+.categories-container .category-card {
+  background-color: #f4e409ff;
+  border-radius: 1rem;
+  color: #000300ff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 400px;
+  padding: 1rem;
+}
+
+.categories-container .category-card .card-image {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
 }
 
 * {
